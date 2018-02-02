@@ -1,0 +1,68 @@
+.vertical-graph {
+  position: relative;
+  margin-bottom: 30px;
+
+  &-wrap {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  &__line {
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid rgba(210, 210, 210, 0.3);
+    font-size: 12px;
+    text-align: left;
+  }
+
+  &__container {
+    position: absolute;
+    left: 48px;
+    right: 17px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    height: 100%;
+    width: 90px;
+    position: relative;
+
+    &__section {
+      color: #fff;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .year {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -27px;
+      font-size: 14px;
+      color: #000;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+}
+
+.blue {
+  background: #2b4989;
+}
+
+.blue-light {
+  background: #405e9e;
+}
+
+.blue-lighten {
+  background: #617fbd;
+}
+
+.gray {
+  background: #d2d2d2;
+}

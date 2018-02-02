@@ -1,0 +1,87 @@
+.owl-carousel {
+  .item {
+    position: relative;
+    min-height: 530px;
+    
+
+    >div {
+      position: absolute;
+      top: 50%;
+      left: 120px;
+      right: 120px;
+      transform: translateY(-50%);
+
+      @media(min-width: 1280px) {
+        left: 250px;
+        right: 250px;
+      }
+    }
+
+    @media(min-width: 1280px) {
+      padding: 0 250px;
+    }
+
+    @media(max-width: 768px) {
+      min-height: 470px;
+    }
+  }
+}
+
+.owl-dots {
+  width: 100%;
+  background: #ececec;
+  height: 6px;
+  display: flex;
+}
+
+.owl-dot {
+  flex-basis: 0 0 50%;
+  min-width: 50%;
+  height: 6px;
+  
+  &.active {
+    background-image: radial-gradient(circle at 50% 50%, #0f203e, #2c4d89);
+  }
+}
+
+.my-arrow-left {
+  width: 40px;
+  height: 200px;
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  margin-top: -100px;
+  background-color: rgba(43, 73, 137, 0.1);
+  background-image: url(../img/arrow-left.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media(min-width: 1280px) {
+    left: 100px;
+  }
+}
+
+.my-arrow-right {
+  width: 40px;
+  height: 200px;
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  margin-top: -100px;
+  background: rgba(43, 73, 137, 0.1);
+  background-image: url(../img/arrow-right.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media(min-width: 1280px) {
+    right: 100px;
+  }
+}
+
+.owl-next.disabled {
+  display: none;
+}
+
+.owl-prev.disabled {
+  display: none;
+}

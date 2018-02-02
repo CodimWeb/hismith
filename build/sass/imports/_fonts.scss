@@ -1,0 +1,7 @@
+.hel {
+  font-family: "Helvetica" sans-serif;
+}
+
+body {
+  @extend .hel;
+}

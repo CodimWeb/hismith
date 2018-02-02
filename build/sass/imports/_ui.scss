@@ -1,0 +1,43 @@
+* {
+  outline: none;
+}
+
+//flex-classes
+.flex             {display: flex;}
+
+.flex-column      {flex-direction: column;}
+.flex-wrap        {flex-wrap: wrap;}
+
+.align-stretch    {align-items: stretch;}
+.align-center     {align-items: center;}
+.align-start      {align-items: flex-start;}
+.align-end        {align-items: flex-end;}
+
+.justify-between  {justify-content: space-between;}
+.justify-center   {justify-content: center;}
+.justify-start    {justify-content: flex-start;}
+.justify-end      {justify-content: flex-end;}
+
+
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-image: radial-gradient(circle at 50% 50%, #ffffff, #efefef);
+}
+
+.sticky-page {
+  min-height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
